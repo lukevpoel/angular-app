@@ -1,7 +1,12 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
-// endbower
+
+// animate from github
+@import "transitions";
+@import "content";
+@import "buttons";
+
 
 .browsehappy {
   margin: 0.2em 0;
