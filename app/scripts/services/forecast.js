@@ -22,4 +22,14 @@ angular.module('angularAppApp')
         isArray:false
       }
     });
+
+    return $resource('http://api.openweathermap.org/data/2.5/weather?q=:location&units=imperial&APPID=fdfc6704f679f2989e7602055aaff7e8&id=:cityID', {}, {
+      query: {
+        method:'GET',
+        params:{
+          cityID: '4717560' // Paris, France ID
+        },
+        isArray:false
+      }
+    });
   });

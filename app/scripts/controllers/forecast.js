@@ -14,4 +14,8 @@ angular.module('angularAppApp')
     $scope.forecastData = forecast.query({
       cityID: $routeParams.cityID
     });
+
+    $scope.getWeatherImage = function(weatherSummary){
+      return weatherSummary;
+    };
   });
