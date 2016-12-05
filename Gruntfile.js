@@ -382,6 +382,7 @@ module.exports = function (grunt) {
         }]
       }
     },
+    //grunt.registerTask('default', ['htmlmin']);
 
     ngtemplates: {
       dist: {
