@@ -4,7 +4,7 @@
 <div ng-repeat="current in forecastData.list|limitTo:1" class="container weather-forecast">
         <div class="col-sm-6">
           <h3>Current Weather</h3>
-          <img ng-src= 'http://openweathermap.org/img/w/{{current.weather[0].icon}}.png' style="width:80px">
+          <div ng-src= 'http://openweathermap.org/img/w/{{current.weather[0].icon}}.png' style="width:80px"></div>
         </div>
         <div class="col-sm-6">
           <h3>
