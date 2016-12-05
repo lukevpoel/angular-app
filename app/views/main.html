@@ -15,6 +15,7 @@
       <p class="lead">{{citiesFound.count}} cities found matching the query: {{searchQuery}}.</p>
       <dl ng-repeat="city in citiesFound.list">
         <dt>{{city.name}}, {{city.sys.country}}</dt>
+        <dd><img ng-src='http://openweathermap.org/img/w/{{city.weather[0].icon}}.png' style="width:80px">
         <dd>{{city.weather[0].main}} - {{city.weather[0].description}}</dd>
         <dt>Temperature</dt>
         <dd>{{city.main.temp}} &deg;F</dd>

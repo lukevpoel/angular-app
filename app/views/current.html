@@ -7,12 +7,12 @@
         {{currentWeather.name}} has already been saved to your list of cities!
     </p>
 </div>
+<div class="container">
+  <div class="col-sm-6 {{currentWeather.weather[0].main}}-img">
+    <!--<img ng-src="../images/{{currentWeather.weather[0].main}}.gif" alt="{{currentWeather.weather[0].main}}">-->
+  </div>
 
-<div class="col-sm-6">
-  <img ng-src="../images/ignore/{{currentWeather.weather[0].main}}.gif" style="width:100%" alt="{{currentWeather.weather[0].main}}"> 
-</div>
-
-<dl class="col-sm-6">
+  <dl class="col-sm-6">
     <dt>Currently</dt>
     <dd>{{currentWeather.weather[0].main}}</dd>
     <dd>{{currentWeather.weather[0].description}}</dd>
@@ -22,7 +22,8 @@
     <dd>{{currentWeather.wind.speed}} mph at {{currentWeather.wind.deg}} &deg;</dd>
     <dt>Clouds</dt>
     <dd>{{currentWeather.clouds.all}}%</dd>
-</dl>
+  </dl>
+</div>
 
 <p><a ng-href="#/forecast/{{cityID}}" class="btn btn-lg btn-primary">View 16-day Forecast</a></p>
 <p><button class="btn btn-sm btn-primary" ng-click="saveCity(currentWeather)">Save City</button></p>

@@ -1,5 +1,10 @@
   //Full scren background
-$backgroundImg: "../images/ignore/img_2567.jpg";
+$backgroundImg: "../images/img_2567.jpg";
 
   //jumbotron background
-$jumboBckgrnd: "../images/ignore/moon-and-clouds.jpg";
+$jumboBckgrnd: "../images/moon-and-clouds.jpg";
+
+.Clouds-img {
+  background-image: url(../images/clouds.gif);
+  min-height: 200px;
+}
