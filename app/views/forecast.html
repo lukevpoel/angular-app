@@ -18,7 +18,7 @@
 </div>
 
 <div class="container">
-  <dl ng-repeat="prediction in forecastData.list" ng-hide="$first" class="weather-forecast col-sm-6 col-lg-4">
+  <dl ng-repeat="prediction in forecastData.list" ng-hide="$first" class="weather-forecast col-sm-6 col-lg-4 clearfix">
         <dt>Forecast for {{prediction.dt*1000 | date:'MMM dd, yyyy'}}</dt>
         <dd><img ng-src= 'http://openweathermap.org/img/w/{{prediction.weather[0].icon}}.png' style="width:80px;"><em>{{prediction.weather[0].main}}</em></dd>
         <dd>Forecast includes {{prediction.weather[0].description}}.</dd>
