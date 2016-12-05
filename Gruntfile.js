@@ -277,6 +277,9 @@ module.exports = function (grunt) {
           '<%= yeoman.dist %>/scripts/{,*/}*.js',
           '<%= yeoman.dist %>/styles/{,*/}*.css',
           '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+          /* Here you'll see some ignoring: */
+          '!<%= yeoman.dist %>/images/some_image.png',
+          '!<%= yeoman.dist %>/images/ignore',
           '<%= yeoman.dist %>/styles/fonts/*'
         ]
       }

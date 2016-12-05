@@ -2,3 +2,17 @@
 .forecast-desc-text {
 font-size: 2em;
 }
+
+
+  //jumbotron text
+.jumbotron {
+  color: white;
+  .input {
+    color: $Xmas-green;
+  }
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
