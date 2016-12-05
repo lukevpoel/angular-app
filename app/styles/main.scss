@@ -18,7 +18,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 }
 
 body {
-  background-image: url($backgroundImg);
+  background-image: url($bgImg);
+  background-size: cover;
   background-color: $sky-blue;
   padding: 0;
 }
@@ -58,7 +59,7 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-  background-image: url(../images/moon-and-clouds.jpg);
+  background-image: url($bgJumbotron);
   background-size: 100% auto;
 //  background-repeat: repeat;
   text-align: center;

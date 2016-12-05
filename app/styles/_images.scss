@@ -1,10 +1,39 @@
   //Full scren background
-$backgroundImg: "../images/img_2567.jpg";
+$bgImg: "../images/img_2567.jpg";
 
   //jumbotron background
-$jumboBckgrnd: "../images/moon-and-clouds.jpg";
+$bgJumbotron: "../images/moon-and-clouds.jpg";
 
-.Clouds-img {
-  background-image: url(../images/clouds.gif);
-  min-height: 200px;
-}
+  //current weather sizing and images
+  .Thunderstorm-img, .Drizzle-img, .Rain-img, .Snow-img, .Atmosphere-img, .Clear-img, .Clouds-img, .Extreme-img {
+    display: block;
+    background-size: 50% 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    min-height: 200px;
+  }
+  .Thunderstorm-img {
+    background-image: url(http://www.animatedimages.org/data/media/42/animated-thunderstorm-image-0065.gif);
+  }
+  .Drizzle-img {
+    background-image: url(http://www.animatedimages.org/data/media/606/animated-rain-image-0033.gif);
+  }
+  .Rain-img {
+    background-image: url(http://www.animatedimages.org/data/media/606/animated-rain-image-0015.gif);
+  }
+  .Snow-img {
+    background-image: url(http://www.animatedimages.org/data/media/619/animated-snow-image-0040.gif);
+  }
+  .Atmosphere-img {
+    background-image: url(http://www.animatedimages.org/data/media/361/animated-cloud-image-0038.gif);
+  }
+  .Clear-img {
+    background-image: url(http://www.animatedimages.org/data/media/278/animated-sun-image-0268.gif);
+  }
+
+  .Clouds-img {
+    background-image: url(http://www.animatedimages.org/data/media/361/animated-cloud-image-0039.gif);
+  }
+  .Extreme-img {
+    background-image: url(http://www.animatedimages.org/data/media/361/animated-cloud-image-0017.gif);
+  }
