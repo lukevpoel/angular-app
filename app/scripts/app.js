@@ -20,7 +20,7 @@ angular
     'ngStorage', //added to enable localStorage features
     'ngTouch'
   ])
-  .config(function ($routeProvider) {
+.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -51,3 +51,14 @@ angular
         redirectTo: '/'
       });
   });
+
+  run.$inject = ['$rootScope', '$location', '$window'];
+  function run($rootScope, $location, $window) {
+        // initialise google analytics
+        $window.ga('create', 'UA-87692607-3', 'auto');
+
+        // track pageview on state change
+        $rootScope.$on('$stateChangeSuccess', function (event) {
+            $window.ga('send', 'pageview', $location.path());
+        });
+    }
