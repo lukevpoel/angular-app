@@ -8,7 +8,7 @@
  *
  * Main module of the application.
  */
-require('angulartics')
+
 
 angular
   .module('angularAppApp', [
@@ -22,7 +22,7 @@ angular
     'ngStorage', //added to enable localStorage features
     'ngTouch',
     'angulartics',
-    require('angulartics.google.analytics')
+    'angulartics.google.analytics'
   ])
 .config(function ($routeProvider) {
     $routeProvider
