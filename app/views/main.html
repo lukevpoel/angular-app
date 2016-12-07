@@ -8,7 +8,7 @@
           </label>
         </p>
         <p>
-          <button class="btn btn-lg btn-primary" ng-click="findCities()">Find City</button>
+          <button class="btn btn-lg btn-primary" ng-click="findCities()" analytics-on="click" analytics-event="Search">Find City</button>
         </p>
     </div>
     <div ng-if="searchQuery">
@@ -19,7 +19,7 @@
         <dd>{{city.weather[0].main}} - {{city.weather[0].description}}</dd>
         <dt>Temperature</dt>
         <dd>{{city.main.temp}} &deg;F</dd>
-        <dd><a ng-href="#/current/{{city.id}}" class="btn btn-lg btn-primary">View Weather</a></dd>
+        <dd><a ng-href="#/current/{{city.id}}" class="btn btn-lg btn-primary" analytics-on="click" analytics-event="Current">View Weather</a></dd>
       </dl>
     </div>
   </p>
@@ -29,7 +29,7 @@
   <h2>Saved Cities</h2>
   <ul class="saved-cities-list">
     <li ng-repeat="city in storage.savedCities">
-      <a ng-href="#/current/{{city.id}}" class="btn btn-lg btn-primary">{{city.name}}</a>
+      <a ng-href="#/current/{{city.id}}" class="btn btn-lg btn-primary" analytics-on="click" analytics-event="Current">{{city.name}}</a>
     </li>
   </ul>
 </div>
